@@ -23,8 +23,8 @@
           <ul class="list-unstyled d-flex align-items-center mb-0 gap-5">
             <li>
               <NuxtLink
-                :to="localPath('#')"
-                class="text-decoration-none text-muted c-pointer"
+                :to="localPath('/')"
+                class="text-decoration-none text-muted"
               >
                 {{ $t("Home") }}
               </NuxtLink>
@@ -32,7 +32,7 @@
 
             <li>
               <NuxtLink
-                :to="localPath('#')"
+                :to="localPath('/')"
                 class="text-decoration-none text-muted"
               >
                 {{ $t("Service") }}
@@ -40,22 +40,30 @@
             </li>
 
             <li>
-              <a href="#" class="text-decoration-none text-muted">
+              <NuxtLink
+                :to="localPath('/')"
+                class="text-decoration-none text-muted"
+              >
                 {{ $t("Features") }}
-              </a>
+              </NuxtLink>
             </li>
 
             <li>
-              <a href="#" class="text-decoration-none text-muted">
+              <NuxtLink
+                :to="localPath('/')"
+                class="text-decoration-none text-muted"
+              >
                 {{ $t("Contact us") }}
-              </a>
+              </NuxtLink>
             </li>
           </ul>
         </div>
 
         <div class="d-flex justify-content-between align-items-center gap-2">
           <div>
-            <button class="btn px-4 py-2 rounded-pill log-btn text-white d-flex align-items-center gap-2">
+            <button
+              class="btn px-4 py-2 rounded-pill log-btn text-white d-flex align-items-center gap-2"
+            >
               <img src="@/assets/imgs/enter.png" alt="login" />
 
               <span>

@@ -7,30 +7,44 @@
         >
           <form @submit.prevent="" class="w-50 py-5">
             <div class="mb-3">
-              <label for="mail" class="form-label text-white">Email</label>
+              <label for="mail" class="form-label text-white">
+                {{ $t("Email") }}
+              </label>
 
               <input
                 type="email"
                 id="mail"
                 class="form-control py-2"
-                placeholder="Enter your Email"
+                :placeholder="
+                  store.lang === 'ar-EG'
+                    ? 'أدخل بريدك الألكتروني'
+                    : 'Enter your Email'
+                "
               />
             </div>
 
             <div class="mb-3">
-              <label for="message" class="form-label text-white">Message</label>
+              <label for="message" class="form-label text-white">
+                {{ $t("Message") }}
+              </label>
 
               <textarea
                 class="form-control"
                 id="message"
                 cols="30"
                 rows="10"
-                placeholder="Enter your Message"
+                :placeholder="
+                  store.lang === 'ar-EG'
+                    ? 'قم بكتابة رسالتك'
+                    : 'Enter your Message'
+                "
               ></textarea>
             </div>
 
             <div>
-              <button class="btn btn-light w-100 py-2">Send message</button>
+              <button class="btn btn-light w-100 py-2">
+                {{ $t("Send message") }}
+              </button>
             </div>
           </form>
         </div>
@@ -39,7 +53,11 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { useStore } from "~/store/store";
+
+const store = useStore();
+</script>
 
 <style lang="scss" scoped>
 .bg-form {
