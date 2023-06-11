@@ -42,6 +42,15 @@ const changeDir = () => {
     localStorage.setItem("lang", lang.value);
   }, 100);
 };
+
+onMounted(() => {
+  if (localStorage.getItem("lang") === "ar-EG") {
+    lang.value = "ar-EG";
+    changeDir();
+  } else {
+    changeDir();
+  }
+});
 </script>
 
 <style scoped>
