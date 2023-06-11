@@ -20,57 +20,15 @@
                     alt="Card image cap"
                   />
                   <div class="card-body">
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                  </div>
-                </div>
-              </swiper-slide>
-
-              <swiper-slide>
-                <div class="card" style="width: 18rem">
-                  <img
-                    class="card-img-top"
-                    src="@/assets/imgs/Raising-pana.png"
-                    alt="Card image cap"
-                  />
-                  <div class="card-body">
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                  </div>
-                </div>
-              </swiper-slide>
-
-              <swiper-slide>
-                <div class="card" style="width: 18rem">
-                  <img
-                    class="card-img-top"
-                    src="@/assets/imgs/English-teacher.png"
-                    alt="Card image cap"
-                  />
-                  <div class="card-body">
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                  </div>
-                </div>
-              </swiper-slide>
-
-              <swiper-slide>
-                <div class="card" style="width: 18rem">
-                  <img
-                    class="card-img-top"
-                    src="@/assets/imgs/Course-app-pana.png"
-                    alt="Card image cap"
-                  />
-                  <div class="card-body">
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                    <p
+                      class="card-text"
+                      :dir="store.lang === 'ar-EG' ? 'rtl' : 'ltr'"
+                    >
+                      {{
+                        $t(
+                          "Some quick example text to build on the card title and make up the bulk of the card's content."
+                        )
+                      }}
                     </p>
                   </div>
                 </div>
@@ -84,9 +42,81 @@
                     alt="Card image cap"
                   />
                   <div class="card-body">
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                    <p
+                      class="card-text"
+                      :dir="store.lang === 'ar-EG' ? 'rtl' : 'ltr'"
+                    >
+                      {{
+                        $t(
+                          "Some quick example text to build on the card title and make up the bulk of the card's content."
+                        )
+                      }}
+                    </p>
+                  </div>
+                </div>
+              </swiper-slide>
+
+              <swiper-slide>
+                <div class="card" style="width: 18rem">
+                  <img
+                    class="card-img-top"
+                    src="@/assets/imgs/Raising-pana.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p
+                      class="card-text"
+                      :dir="store.lang === 'ar-EG' ? 'rtl' : 'ltr'"
+                    >
+                      {{
+                        $t(
+                          "Some quick example text to build on the card title and make up the bulk of the card's content."
+                        )
+                      }}
+                    </p>
+                  </div>
+                </div>
+              </swiper-slide>
+
+              <swiper-slide>
+                <div class="card" style="width: 18rem">
+                  <img
+                    class="card-img-top"
+                    src="@/assets/imgs/English-teacher.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p
+                      class="card-text"
+                      :dir="store.lang === 'ar-EG' ? 'rtl' : 'ltr'"
+                    >
+                      {{
+                        $t(
+                          "Some quick example text to build on the card title and make up the bulk of the card's content."
+                        )
+                      }}
+                    </p>
+                  </div>
+                </div>
+              </swiper-slide>
+
+              <swiper-slide>
+                <div class="card" style="width: 18rem">
+                  <img
+                    class="card-img-top"
+                    src="@/assets/imgs/Course-app-pana.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p
+                      class="card-text"
+                      :dir="store.lang === 'ar-EG' ? 'rtl' : 'ltr'"
+                    >
+                      {{
+                        $t(
+                          "Some quick example text to build on the card title and make up the bulk of the card's content."
+                        )
+                      }}
                     </p>
                   </div>
                 </div>
@@ -100,57 +130,15 @@
                     alt="Card image cap"
                   />
                   <div class="card-body">
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                  </div>
-                </div>
-              </swiper-slide>
-
-              <swiper-slide>
-                <div class="card" style="width: 18rem">
-                  <img
-                    class="card-img-top"
-                    src="@/assets/imgs/Raising-pana.png"
-                    alt="Card image cap"
-                  />
-                  <div class="card-body">
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                  </div>
-                </div>
-              </swiper-slide>
-
-              <swiper-slide>
-                <div class="card" style="width: 18rem">
-                  <img
-                    class="card-img-top"
-                    src="@/assets/imgs/English-teacher.png"
-                    alt="Card image cap"
-                  />
-                  <div class="card-body">
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                  </div>
-                </div>
-              </swiper-slide>
-
-              <swiper-slide>
-                <div class="card" style="width: 18rem">
-                  <img
-                    class="card-img-top"
-                    src="@/assets/imgs/Course-app-pana.png"
-                    alt="Card image cap"
-                  />
-                  <div class="card-body">
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                    <p
+                      class="card-text"
+                      :dir="store.lang === 'ar-EG' ? 'rtl' : 'ltr'"
+                    >
+                      {{
+                        $t(
+                          "Some quick example text to build on the card title and make up the bulk of the card's content."
+                        )
+                      }}
                     </p>
                   </div>
                 </div>
@@ -164,9 +152,81 @@
                     alt="Card image cap"
                   />
                   <div class="card-body">
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                    <p
+                      class="card-text"
+                      :dir="store.lang === 'ar-EG' ? 'rtl' : 'ltr'"
+                    >
+                      {{
+                        $t(
+                          "Some quick example text to build on the card title and make up the bulk of the card's content."
+                        )
+                      }}
+                    </p>
+                  </div>
+                </div>
+              </swiper-slide>
+
+              <swiper-slide>
+                <div class="card" style="width: 18rem">
+                  <img
+                    class="card-img-top"
+                    src="@/assets/imgs/Raising-pana.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p
+                      class="card-text"
+                      :dir="store.lang === 'ar-EG' ? 'rtl' : 'ltr'"
+                    >
+                      {{
+                        $t(
+                          "Some quick example text to build on the card title and make up the bulk of the card's content."
+                        )
+                      }}
+                    </p>
+                  </div>
+                </div>
+              </swiper-slide>
+
+              <swiper-slide>
+                <div class="card" style="width: 18rem">
+                  <img
+                    class="card-img-top"
+                    src="@/assets/imgs/English-teacher.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p
+                      class="card-text"
+                      :dir="store.lang === 'ar-EG' ? 'rtl' : 'ltr'"
+                    >
+                      {{
+                        $t(
+                          "Some quick example text to build on the card title and make up the bulk of the card's content."
+                        )
+                      }}
+                    </p>
+                  </div>
+                </div>
+              </swiper-slide>
+
+              <swiper-slide>
+                <div class="card" style="width: 18rem">
+                  <img
+                    class="card-img-top"
+                    src="@/assets/imgs/Course-app-pana.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p
+                      class="card-text"
+                      :dir="store.lang === 'ar-EG' ? 'rtl' : 'ltr'"
+                    >
+                      {{
+                        $t(
+                          "Some quick example text to build on the card title and make up the bulk of the card's content."
+                        )
+                      }}
                     </p>
                   </div>
                 </div>
