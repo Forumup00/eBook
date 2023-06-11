@@ -1,0 +1,11 @@
+$main-bg-color: #222;
+$main-color: #9848ff;
+$main-text-color: white;
+
+body[mood="dark"] {
+  background-color: $main-bg-color;
+  color: $main-text-color;
+  .text-muted {
+    color: #848181 !important;
+  }
+}
