@@ -6,7 +6,7 @@
           <div class="w-100">
             <swiper
               :navigation="true"
-              :loop="true"
+              dir="ltr"
               :modules="modules"
               class="mySwiper"
               :slidesPerView="4"
@@ -184,8 +184,11 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
+import { useStore } from "~/store/store";
 
 const modules = ref([Navigation]);
+
+const store = useStore();
 </script>
 
 <style lang="scss" scoped>
