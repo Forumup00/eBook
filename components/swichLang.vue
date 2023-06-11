@@ -13,7 +13,11 @@
 </template>
 
 <script setup>
+import { useStore } from "~/store/store";
+
 const { locales, locale, setLocale } = useI18n();
+
+const store = useStore();
 
 const lang = computed({
   get: () => locale.value,
@@ -31,6 +35,7 @@ const changeDir = () => {
           lang: "ar",
         },
       });
+      store.setLang("ar-EG");
     } else {
       useHead({
         htmlAttrs: {
@@ -38,6 +43,7 @@ const changeDir = () => {
           lang: "en",
         },
       });
+      store.setLang("en-US");
     }
     localStorage.setItem("lang", lang.value);
   }, 100);
