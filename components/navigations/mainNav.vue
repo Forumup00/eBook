@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="navbar navbar-expand-lg sticky-top position-sticky"
+    class="navbar navbar-expand-lg sticky-top position-sticky d-lg-block d-sm-none d-none"
     :class="[
       drop && 'drop-shadow',
       isDark ? 'navbar-dark bg-dark' : 'navbar-white bg-white',
@@ -86,6 +86,103 @@
       </div>
     </div>
   </nav>
+
+  <nav
+    class="navbar navbar-expand-lg sticky-top position-sticky d-lg-none position-relative"
+    :class="[
+      drop && 'drop-shadow',
+      isDark ? 'navbar-dark bg-dark' : 'navbar-white bg-white',
+    ]"
+  >
+    <div class="container">
+      <div class="w-100 d-flex align-items-center justify-content-between">
+        <div
+          class="logo d-flex align-items-center gap-2 c-pointer"
+          @click="$router.push('/')"
+        >
+          <img src="@/assets/imgs/logo.jpg" alt="logo" class="rounded-circle" />
+
+          <span class="fw-bold" :class="isDark && 'text-white'">
+            {{ $t("title") }}
+          </span>
+        </div>
+
+        <div class="list">
+          <button
+            class="btn border-0 p-0 list-btn"
+            @click="
+              dropMenu = !dropMenu;
+              $event.stopPropagation();
+            "
+          >
+            <i
+              class="fa-solid fa-bars fs-3"
+              :class="store.isDark ? 'text-white' : 'text-dark'"
+            ></i>
+          </button>
+
+          <div
+            class="list-options position-absolute start-0 w-100 py-3"
+            v-if="dropMenu"
+            @click="$event.stopPropagation()"
+          >
+            <div class="container">
+              <div class="w-100 mb-3">
+                <NuxtLink
+                  :to="localPath('/')"
+                  class="text-decoration-none text-muted d-block py-3 border-bottom"
+                >
+                  {{ $t("Home") }}
+                </NuxtLink>
+
+                <NuxtLink
+                  :to="localPath('/')"
+                  class="text-decoration-none text-muted d-block py-3 border-bottom"
+                >
+                  {{ $t("Service") }}
+                </NuxtLink>
+                <NuxtLink
+                  :to="localPath('/')"
+                  class="text-decoration-none text-muted d-block py-3 border-bottom"
+                >
+                  {{ $t("Features") }}
+                </NuxtLink>
+                <NuxtLink
+                  :to="localPath('/')"
+                  class="text-decoration-none text-muted d-block py-3 border-bottom"
+                >
+                  {{ $t("Contact us") }}
+                </NuxtLink>
+              </div>
+
+              <div class="w-100 mb-3 border-bottom pb-3">
+                <button
+                  class="btn px-4 py-2 rounded-pill log-btn text-white d-flex align-items-center gap-2"
+                >
+                  <img src="@/assets/imgs/enter.png" alt="login" />
+
+                  <span>
+                    {{ $t("Login") }}
+                  </span>
+                </button>
+              </div>
+
+              <div class="mb-3 border-bottom pb-3">
+                <SwichLang class="w-25" />
+              </div>
+
+              <div class="mood">
+                <label class="switch">
+                  <input type="checkbox" v-model="isDark" @change="playDark" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
 </template>
 
 <script setup>
@@ -118,6 +215,8 @@ const playDark = () => {
   }
 };
 
+const dropMenu = ref(false);
+
 const drop = ref(false);
 onMounted(() => {
   window.onscroll = () => {
@@ -132,6 +231,10 @@ onMounted(() => {
     isDark.value = true;
     playDark();
   }
+
+  window.onclick = () => {
+    dropMenu.value = false;
+  };
 });
 </script>
 
@@ -209,6 +312,16 @@ onMounted(() => {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
+  }
+}
+.list {
+  .list-btn {
+    &:active {
+      transform: scale(0.97);
+    }
+  }
+  .list-options {
+    top: 56px;
   }
 }
 </style>
