@@ -29,8 +29,11 @@
                 </p>
 
                 <p class="text-muted">
-                  شارع مديرية الأمن رقم 9874 فيلا أبو تريكة لاعب النادي الشرقية
-                  بالزمالك
+                  {{
+                    $t(
+                      "Security Directorate Street No. 9874 Villa Abu Trika, player of the Eastern Club in Zamalek"
+                    )
+                  }}
                 </p>
               </div>
 
