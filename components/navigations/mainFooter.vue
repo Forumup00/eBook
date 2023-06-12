@@ -11,30 +11,40 @@
                 class="logo rounded-circle"
               />
 
-              <span class="fw-bold">Pauds.</span>
+              <span class="fw-bold">{{ $t("title") }}</span>
             </p>
 
             <p class="w-75">
-              Pauds no school is an international elementary school that aims to
-              educate students
+              {{
+                $t(
+                  "An institution that aims to educate students and facilitate everything that is difficult for them and their parents"
+                )
+              }}
             </p>
 
             <div class="d-flex justify-content-between">
               <div class="w-50">
-                <p class="fw-bold">Address</p>
+                <p class="fw-bold">
+                  {{ $t("Address") }}
+                </p>
 
                 <p class="text-muted">
-                  Number 3891 Ranchview Dr. Richardson, California 62639,
-                  Amerika Serikat Country
+                  شارع مديرية الأمن رقم 9874 فيلا أبو تريكة لاعب النادي الشرقية
+                  بالزمالك
                 </p>
               </div>
 
               <div class="w-50">
-                <p class="fw-bold">Phone Number</p>
+                <p class="fw-bold">
+                  {{ $t("Phone Number") }}
+                </p>
 
-                <p>
-                  (270) 555-0467 <br />
-                  (270) 555-0443
+                <p style="direction: ltr">
+                  <span>(270) 555-0467</span>
+
+                  <br />
+
+                  <span>(270) 555-0443</span>
                 </p>
               </div>
             </div>
@@ -42,15 +52,21 @@
         </div>
 
         <div class="col-lg-2">
-          <p class="fw-bold">Programs</p>
+          <p class="fw-bold">
+            {{ $t("Programs") }}
+          </p>
         </div>
 
         <div class="col-lg-2">
-          <p class="fw-bold">General</p>
+          <p class="fw-bold">
+            {{ $t("General") }}
+          </p>
         </div>
 
         <div class="col-lg-2">
-          <p class="fw-bold">FAQ</p>
+          <p class="fw-bold">
+            {{ $t("FAQ") }}
+          </p>
         </div>
       </div>
     </div>
