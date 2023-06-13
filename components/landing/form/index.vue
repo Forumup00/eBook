@@ -31,8 +31,6 @@
               <textarea
                 class="form-control"
                 id="message"
-                cols="30"
-                rows="10"
                 :placeholder="
                   store.lang === 'ar-EG'
                     ? 'قم بكتابة رسالتك'
@@ -64,11 +62,17 @@ const store = useStore();
   background-image: url(@/assets/imgs/top-view.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: 100% 100%;
   clip-path: polygon(50% 100%, 0 90%, 0 0, 100% 0, 100% 90%);
 }
 textarea {
   min-height: 250px;
   max-height: 250px;
+}
+@media only screen and (max-width: 767px) {
+  textarea {
+    min-height: auto !important;
+    max-height: auto !important;
+  }
 }
 </style>
