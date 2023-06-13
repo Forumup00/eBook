@@ -9,11 +9,25 @@
               dir="ltr"
               :modules="modules"
               class="mySwiper"
-              :slidesPerView="4"
+              :slidesPerView="1"
               :spaceBetween="100"
+              :breakpoints="{
+                '500': {
+                  slidesPerView: 2,
+                  spaceBetween: 40,
+                },
+                '992': {
+                  slidesPerView: 3,
+                  spaceBetween: 40,
+                },
+                '1024': {
+                  slidesPerView: 4,
+                  spaceBetween: 40,
+                },
+              }"
             >
               <swiper-slide>
-                <div class="card" style="width: 18rem">
+                <div class="card">
                   <img
                     class="card-img-top"
                     src="@/assets/imgs/Raising-hand.png"
@@ -35,7 +49,7 @@
               </swiper-slide>
 
               <swiper-slide>
-                <div class="card" style="width: 18rem">
+                <div class="card">
                   <img
                     class="card-img-top"
                     src="@/assets/imgs/Course-app-rafiki.png"
@@ -57,7 +71,7 @@
               </swiper-slide>
 
               <swiper-slide>
-                <div class="card" style="width: 18rem">
+                <div class="card">
                   <img
                     class="card-img-top"
                     src="@/assets/imgs/Raising-pana.png"
@@ -79,7 +93,7 @@
               </swiper-slide>
 
               <swiper-slide>
-                <div class="card" style="width: 18rem">
+                <div class="card">
                   <img
                     class="card-img-top"
                     src="@/assets/imgs/English-teacher.png"
@@ -101,7 +115,7 @@
               </swiper-slide>
 
               <swiper-slide>
-                <div class="card" style="width: 18rem">
+                <div class="card">
                   <img
                     class="card-img-top"
                     src="@/assets/imgs/Course-app-pana.png"
@@ -123,7 +137,7 @@
               </swiper-slide>
 
               <swiper-slide>
-                <div class="card" style="width: 18rem">
+                <div class="card">
                   <img
                     class="card-img-top"
                     src="@/assets/imgs/Raising-hand.png"
@@ -145,7 +159,7 @@
               </swiper-slide>
 
               <swiper-slide>
-                <div class="card" style="width: 18rem">
+                <div class="card">
                   <img
                     class="card-img-top"
                     src="@/assets/imgs/Course-app-rafiki.png"
@@ -167,7 +181,7 @@
               </swiper-slide>
 
               <swiper-slide>
-                <div class="card" style="width: 18rem">
+                <div class="card">
                   <img
                     class="card-img-top"
                     src="@/assets/imgs/Raising-pana.png"
@@ -189,7 +203,7 @@
               </swiper-slide>
 
               <swiper-slide>
-                <div class="card" style="width: 18rem">
+                <div class="card">
                   <img
                     class="card-img-top"
                     src="@/assets/imgs/English-teacher.png"
@@ -211,7 +225,7 @@
               </swiper-slide>
 
               <swiper-slide>
-                <div class="card" style="width: 18rem">
+                <div class="card">
                   <img
                     class="card-img-top"
                     src="@/assets/imgs/Course-app-pana.png"

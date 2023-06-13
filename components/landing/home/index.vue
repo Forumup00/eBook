@@ -49,13 +49,25 @@ const store = useStore();
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 531px) {
   .heading {
     h1 {
-      font-size: 45px;
+      font-size: 40px;
     }
     p {
       width: 100% !important;
+      font-size: 15px;
+    }
+  }
+}
+
+@media only screen and ((max-width: 768px) and (min-width: 531px)) {
+  .heading {
+    h1 {
+      font-size: 60px;
+    }
+    p {
+      width: 75% !important;
       font-size: 15px;
     }
   }

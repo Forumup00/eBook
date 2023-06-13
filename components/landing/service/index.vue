@@ -5,7 +5,7 @@
     </h2>
   </div>
 
-  <div class="row mb-5">
+  <div class="row mb-5 mx-0 g-3">
     <div class="col-lg-3 col-md-6 col-sm-12 card-y">
       <div class="w-100 px-3 py-4 main-shadow rounded-4 custom-h">
         <p>
