@@ -6,7 +6,7 @@
   </div>
 
   <div class="row mb-5">
-    <div class="col-lg-3 card-y">
+    <div class="col-lg-3 col-md-6 col-sm-12 card-y">
       <div class="w-100 px-3 py-4 main-shadow rounded-4 custom-h">
         <p>
           <img src="@/assets/imgs/like.png" alt="like" class="icon" />
@@ -24,7 +24,7 @@
       </div>
     </div>
 
-    <div class="col-lg-3 card-y">
+    <div class="col-lg-3 col-md-6 col-sm-12 card-y">
       <div class="w-100 px-3 py-4 main-shadow rounded-4 custom-h">
         <p>
           <img src="@/assets/imgs/award.png" alt="like" class="icon" />
@@ -44,7 +44,7 @@
       </div>
     </div>
 
-    <div class="col-lg-3 card-y">
+    <div class="col-lg-3 col-md-6 col-sm-12 card-y">
       <div class="w-100 px-3 py-4 main-shadow rounded-4 custom-h">
         <p>
           <img src="@/assets/imgs/smile.png" alt="like" class="icon" />
@@ -62,7 +62,7 @@
       </div>
     </div>
 
-    <div class="col-lg-3 card-y">
+    <div class="col-lg-3 col-md-6 col-sm-12 card-y">
       <div class="w-100 px-3 py-4 main-shadow rounded-4 custom-h">
         <p>
           <img src="@/assets/imgs/creative-brain.png" alt="like" class="icon" />
@@ -85,11 +85,7 @@
 
   <div class="col-lg-6 mb-5">
     <div class="w-100 text-center">
-      <img
-        src="@/assets/imgs/uniStudent.png"
-        alt="student"
-        class="w-100 uni-img"
-      />
+      <img src="@/assets/imgs/uniStudent.png" alt="student" class="uni-img" />
     </div>
   </div>
 
@@ -157,8 +153,15 @@
 }
 
 .uni-img {
-  width: 50%;
+  width: 100%;
   height: 500px;
   object-fit: contain;
+}
+
+@media only screen and (max-width: 320px) {
+  .uni-img {
+    width: 90%;
+    height: 400px;
+  }
 }
 </style>

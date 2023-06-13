@@ -48,4 +48,16 @@ const store = useStore();
     }
   }
 }
+
+@media only screen and (max-width: 320px) {
+  .heading {
+    h1 {
+      font-size: 45px;
+    }
+    p {
+      width: 100% !important;
+      font-size: 15px;
+    }
+  }
+}
 </style>
