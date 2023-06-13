@@ -107,75 +107,81 @@
           </span>
         </div>
 
-        <div class="list">
-          <button
-            class="btn border-0 p-0 list-btn"
-            @click="
-              dropMenu = !dropMenu;
-              $event.stopPropagation();
-            "
-          >
-            <i
-              class="fa-solid fa-bars fs-3"
-              :class="store.isDark ? 'text-white' : 'text-dark'"
-            ></i>
-          </button>
+        <div class="d-flex align-items-center gap-2">
+          <div class="">
+            <SwichLang />
+          </div>
 
-          <div
-            class="list-options position-absolute start-0 w-100 py-3"
-            v-if="dropMenu"
-            @click="$event.stopPropagation()"
-          >
-            <div class="container">
-              <div class="w-100 mb-3">
-                <NuxtLink
-                  :to="localPath('/')"
-                  class="text-decoration-none text-muted d-block py-3 border-bottom"
-                >
-                  {{ $t("Home") }}
-                </NuxtLink>
+          <div class="list">
+            <button
+              class="btn border-0 p-0 list-btn"
+              @click="
+                dropMenu = !dropMenu;
+                $event.stopPropagation();
+              "
+            >
+              <i
+                class="fa-solid fa-bars fs-1"
+                :class="store.isDark ? 'text-white' : 'text-dark'"
+              ></i>
+            </button>
 
-                <NuxtLink
-                  :to="localPath('/')"
-                  class="text-decoration-none text-muted d-block py-3 border-bottom"
-                >
-                  {{ $t("Service") }}
-                </NuxtLink>
-                <NuxtLink
-                  :to="localPath('/')"
-                  class="text-decoration-none text-muted d-block py-3 border-bottom"
-                >
-                  {{ $t("Features") }}
-                </NuxtLink>
-                <NuxtLink
-                  :to="localPath('/')"
-                  class="text-decoration-none text-muted d-block py-3 border-bottom"
-                >
-                  {{ $t("Contact us") }}
-                </NuxtLink>
-              </div>
+            <div
+              class="list-options position-absolute start-0 w-100 py-3"
+              v-if="dropMenu"
+              @click="$event.stopPropagation()"
+            >
+              <div class="container">
+                <div class="w-100 mb-3">
+                  <NuxtLink
+                    :to="localPath('/')"
+                    class="text-decoration-none text-muted d-block py-3 border-bottom"
+                  >
+                    {{ $t("Home") }}
+                  </NuxtLink>
 
-              <div class="w-100 mb-3 border-bottom pb-3">
-                <button
-                  class="btn px-4 py-2 rounded-pill log-btn text-white d-flex align-items-center gap-2"
-                >
-                  <img src="@/assets/imgs/enter.png" alt="login" />
+                  <NuxtLink
+                    :to="localPath('/')"
+                    class="text-decoration-none text-muted d-block py-3 border-bottom"
+                  >
+                    {{ $t("Service") }}
+                  </NuxtLink>
+                  <NuxtLink
+                    :to="localPath('/')"
+                    class="text-decoration-none text-muted d-block py-3 border-bottom"
+                  >
+                    {{ $t("Features") }}
+                  </NuxtLink>
+                  <NuxtLink
+                    :to="localPath('/')"
+                    class="text-decoration-none text-muted d-block py-3 border-bottom"
+                  >
+                    {{ $t("Contact us") }}
+                  </NuxtLink>
+                </div>
 
-                  <span>
-                    {{ $t("Login") }}
-                  </span>
-                </button>
-              </div>
+                <div class="w-100 mb-3 border-bottom pb-3">
+                  <button
+                    class="btn px-4 py-2 rounded-pill log-btn text-white d-flex align-items-center gap-2"
+                  >
+                    <img src="@/assets/imgs/enter.png" alt="login" />
 
-              <div class="mb-3 border-bottom pb-3">
-                <SwichLang class="w-25" />
-              </div>
+                    <span>
+                      {{ $t("Login") }}
+                    </span>
+                  </button>
+                </div>
 
-              <div class="mood">
-                <label class="switch">
-                  <input type="checkbox" v-model="isDark" @change="playDark" />
-                  <span class="slider"></span>
-                </label>
+                <div class="mood">
+                  <label class="switch">
+                    <input
+                      type="checkbox"
+                      v-model="isDark"
+                      @change="playDark"
+                    />
+                    <span class="slider"></span>
+                  </label>
+                </div>
               </div>
             </div>
           </div>
