@@ -35,7 +35,6 @@ const changeDir = () => {
           lang: "ar",
         },
       });
-      store.setLang("ar-EG");
     } else {
       useHead({
         htmlAttrs: {
@@ -43,7 +42,6 @@ const changeDir = () => {
           lang: "en",
         },
       });
-      store.setLang("en-US");
     }
     localStorage.setItem("lang", lang.value);
   }, 100);

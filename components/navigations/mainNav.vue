@@ -10,7 +10,7 @@
       <div class="w-100 d-flex justify-content-between align-items-center">
         <div
           class="logo d-flex align-items-center gap-2 c-pointer"
-          @click="$router.push('/')"
+          @click="localPath($router.push('/'))"
         >
           <img src="@/assets/imgs/logo.jpg" alt="logo" class="rounded-circle" />
 
@@ -63,6 +63,7 @@
           <div>
             <button
               class="btn px-4 py-2 rounded-pill log-btn text-white d-flex align-items-center gap-2"
+              @click="localPath($router.push('/auth/login'))"
             >
               <img src="@/assets/imgs/enter.png" alt="login" />
 
@@ -98,7 +99,7 @@
       <div class="w-100 d-flex align-items-center justify-content-between">
         <div
           class="logo d-flex align-items-center gap-2 c-pointer"
-          @click="$router.push('/')"
+          @click="localPath($router.push('/'))"
         >
           <img src="@/assets/imgs/logo.jpg" alt="logo" class="rounded-circle" />
 
@@ -108,7 +109,7 @@
         </div>
 
         <div class="d-flex align-items-center gap-2">
-          <div class="">
+          <div>
             <SwichLang />
           </div>
 
@@ -162,6 +163,7 @@
 
                 <div class="w-100 mb-3 border-bottom pb-3">
                   <button
+                    @click="localPath($router.push('/auth/login'))"
                     class="btn px-4 py-2 rounded-pill log-btn text-white d-flex align-items-center gap-2"
                   >
                     <img src="@/assets/imgs/enter.png" alt="login" />

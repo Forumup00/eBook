@@ -6,6 +6,9 @@ body[mood=dark] {
 body[mood=dark] .text-muted {
   color: #848181 !important;
 }
+body[mood=dark] .list-options {
+  background-color: #000000 !important;
+}
 
 body[mood=light] {
   background-color: white;
@@ -13,6 +16,9 @@ body[mood=light] {
 }
 body[mood=light] .text-muted {
   color: #a19d9d !important;
+}
+body[mood=light] .list-options {
+  background-color: #222 !important;
 }
 
 * {
@@ -25,4 +31,8 @@ body[mood=light] .text-muted {
 
 .main-shadow {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.main-bg-color {
+  background-color: #9848ff;
 }/*# sourceMappingURL=main.css.map */

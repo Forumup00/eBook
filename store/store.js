@@ -6,14 +6,8 @@ export const useStore = defineStore("store", () => {
     isDark.value = value;
   };
 
-  const lang = ref("en-US");
-  const setLang = (value) => {
-    lang.value = value;
-  };
   return {
     isDark,
     setDark,
-    lang,
-    setLang,
   };
 });

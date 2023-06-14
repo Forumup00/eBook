@@ -16,7 +16,7 @@
                 id="mail"
                 class="form-control py-2"
                 :placeholder="
-                  store.lang === 'ar-EG'
+                  locale === 'ar-EG'
                     ? 'أدخل بريدك الألكتروني'
                     : 'Enter your Email'
                 "
@@ -32,9 +32,7 @@
                 class="form-control"
                 id="message"
                 :placeholder="
-                  store.lang === 'ar-EG'
-                    ? 'قم بكتابة رسالتك'
-                    : 'Enter your Message'
+                  locale === 'ar-EG' ? 'قم بكتابة رسالتك' : 'Enter your Message'
                 "
               ></textarea>
             </div>
@@ -55,6 +53,8 @@
 import { useStore } from "~/store/store";
 
 const store = useStore();
+
+const { locales, locale, setLocale } = useI18n();
 </script>
 
 <style lang="scss" scoped>

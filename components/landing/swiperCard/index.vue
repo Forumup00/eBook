@@ -36,7 +36,7 @@
                   <div class="card-body">
                     <p
                       class="card-text"
-                      :dir="store.lang === 'ar-EG' ? 'rtl' : 'ltr'"
+                      :dir="locale === 'ar-EG' ? 'rtl' : 'ltr'"
                     >
                       {{
                         $t(
@@ -58,7 +58,7 @@
                   <div class="card-body">
                     <p
                       class="card-text"
-                      :dir="store.lang === 'ar-EG' ? 'rtl' : 'ltr'"
+                      :dir="locale === 'ar-EG' ? 'rtl' : 'ltr'"
                     >
                       {{
                         $t(
@@ -80,7 +80,7 @@
                   <div class="card-body">
                     <p
                       class="card-text"
-                      :dir="store.lang === 'ar-EG' ? 'rtl' : 'ltr'"
+                      :dir="locale === 'ar-EG' ? 'rtl' : 'ltr'"
                     >
                       {{
                         $t(
@@ -102,7 +102,7 @@
                   <div class="card-body">
                     <p
                       class="card-text"
-                      :dir="store.lang === 'ar-EG' ? 'rtl' : 'ltr'"
+                      :dir="locale === 'ar-EG' ? 'rtl' : 'ltr'"
                     >
                       {{
                         $t(
@@ -124,7 +124,7 @@
                   <div class="card-body">
                     <p
                       class="card-text"
-                      :dir="store.lang === 'ar-EG' ? 'rtl' : 'ltr'"
+                      :dir="locale === 'ar-EG' ? 'rtl' : 'ltr'"
                     >
                       {{
                         $t(
@@ -146,7 +146,7 @@
                   <div class="card-body">
                     <p
                       class="card-text"
-                      :dir="store.lang === 'ar-EG' ? 'rtl' : 'ltr'"
+                      :dir="locale === 'ar-EG' ? 'rtl' : 'ltr'"
                     >
                       {{
                         $t(
@@ -168,7 +168,7 @@
                   <div class="card-body">
                     <p
                       class="card-text"
-                      :dir="store.lang === 'ar-EG' ? 'rtl' : 'ltr'"
+                      :dir="locale === 'ar-EG' ? 'rtl' : 'ltr'"
                     >
                       {{
                         $t(
@@ -190,7 +190,7 @@
                   <div class="card-body">
                     <p
                       class="card-text"
-                      :dir="store.lang === 'ar-EG' ? 'rtl' : 'ltr'"
+                      :dir="locale === 'ar-EG' ? 'rtl' : 'ltr'"
                     >
                       {{
                         $t(
@@ -212,7 +212,7 @@
                   <div class="card-body">
                     <p
                       class="card-text"
-                      :dir="store.lang === 'ar-EG' ? 'rtl' : 'ltr'"
+                      :dir="locale === 'ar-EG' ? 'rtl' : 'ltr'"
                     >
                       {{
                         $t(
@@ -234,7 +234,7 @@
                   <div class="card-body">
                     <p
                       class="card-text"
-                      :dir="store.lang === 'ar-EG' ? 'rtl' : 'ltr'"
+                      :dir="locale === 'ar-EG' ? 'rtl' : 'ltr'"
                     >
                       {{
                         $t(
@@ -263,6 +263,8 @@ import { useStore } from "~/store/store";
 const modules = ref([Navigation]);
 
 const store = useStore();
+
+const { locales, locale, setLocale } = useI18n();
 </script>
 
 <style lang="scss" scoped>
