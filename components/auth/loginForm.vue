@@ -3,8 +3,9 @@
     @submit.prevent=""
     class="w-100 h-100 d-flex align-items-center justify-content-center flex-column"
   >
-    <div class="w-100 mb-4">
-      <img src="" alt="">
+    <div class="w-100 mb-4 d-flex align-items-center gap-2 lock-div">
+      <img src="@/assets/imgs/lock.png" alt="lock" class="lock-img rounded-2" />
+      <h2 class="mb-0">{{ $t("Login") }}</h2>
     </div>
 
     <div class="mb-4 w-100">
@@ -87,6 +88,12 @@ input[type="password"] {
   }
   &:active {
     transform: scale(0.99);
+  }
+}
+.lock-div {
+  .lock-img {
+    width: 80px;
+    object-fit: contain;
   }
 }
 </style>
