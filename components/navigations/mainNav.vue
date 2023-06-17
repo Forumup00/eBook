@@ -137,6 +137,7 @@
                   <NuxtLink
                     :to="localPath('/')"
                     class="text-decoration-none text-muted d-block py-3 border-bottom"
+                    @click="dropMenu = false"
                   >
                     {{ $t("Home") }}
                   </NuxtLink>
@@ -144,18 +145,21 @@
                   <NuxtLink
                     :to="localPath('/')"
                     class="text-decoration-none text-muted d-block py-3 border-bottom"
+                    @click="dropMenu = false"
                   >
                     {{ $t("Service") }}
                   </NuxtLink>
                   <NuxtLink
                     :to="localPath('/')"
                     class="text-decoration-none text-muted d-block py-3 border-bottom"
+                    @click="dropMenu = false"
                   >
                     {{ $t("Features") }}
                   </NuxtLink>
                   <NuxtLink
                     :to="localPath('/')"
                     class="text-decoration-none text-muted d-block py-3 border-bottom"
+                    @click="dropMenu = false"
                   >
                     {{ $t("Contact us") }}
                   </NuxtLink>
@@ -163,7 +167,10 @@
 
                 <div class="w-100 mb-3 border-bottom pb-3">
                   <button
-                    @click="localPath($router.push('/auth/login'))"
+                    @click="
+                      localPath($router.push('/auth/login'));
+                      dropMenu = false;
+                    "
                     class="btn px-4 py-2 rounded-pill log-btn text-white d-flex align-items-center gap-2"
                   >
                     <img src="@/assets/imgs/enter.png" alt="login" />
