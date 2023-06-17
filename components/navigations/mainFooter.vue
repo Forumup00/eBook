@@ -31,7 +31,7 @@
                 <p class="text-muted">
                   {{
                     $t(
-                      "Security Directorate Street No. 9874 Villa Habiba shokir, player of the Eastern Club in Zamalek"
+                      "Security Directorate Street No. 9874 Villa Abu Trika, player of the Eastern Club in Zamalek"
                     )
                   }}
                 </p>
