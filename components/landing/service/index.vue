@@ -7,7 +7,9 @@
 
   <div class="row mb-5 mx-0 g-3">
     <div class="col-lg-3 col-md-6 col-sm-12 card-y">
-      <div class="w-100 px-3 py-4 main-shadow rounded-4 custom-h">
+      <div
+        class="w-100 px-3 py-4 main-shadow rounded-4 custom-h card-animation"
+      >
         <p>
           <img src="@/assets/imgs/like.png" alt="like" class="icon" />
         </p>
@@ -25,7 +27,9 @@
     </div>
 
     <div class="col-lg-3 col-md-6 col-sm-12 card-y">
-      <div class="w-100 px-3 py-4 main-shadow rounded-4 custom-h">
+      <div
+        class="w-100 px-3 py-4 main-shadow rounded-4 custom-h card-animation"
+      >
         <p>
           <img src="@/assets/imgs/award.png" alt="like" class="icon" />
         </p>
@@ -45,7 +49,9 @@
     </div>
 
     <div class="col-lg-3 col-md-6 col-sm-12 card-y">
-      <div class="w-100 px-3 py-4 main-shadow rounded-4 custom-h">
+      <div
+        class="w-100 px-3 py-4 main-shadow rounded-4 custom-h card-animation"
+      >
         <p>
           <img src="@/assets/imgs/smile.png" alt="like" class="icon" />
         </p>
@@ -63,7 +69,9 @@
     </div>
 
     <div class="col-lg-3 col-md-6 col-sm-12 card-y">
-      <div class="w-100 px-3 py-4 main-shadow rounded-4 custom-h">
+      <div
+        class="w-100 px-3 py-4 main-shadow rounded-4 custom-h card-animation"
+      >
         <p>
           <img src="@/assets/imgs/creative-brain.png" alt="like" class="icon" />
         </p>
@@ -134,7 +142,25 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+onMounted(() => {
+  let cardAnimation = document.querySelectorAll(".card-animation");
+  window.onscroll = () => {
+    let windowHeight = window.innerHeight;
+
+    cardAnimation.forEach((card, i) => {
+      if (
+        card.getBoundingClientRect().top < windowHeight &&
+        card.getBoundingClientRect().top > -200
+      ) {
+        card.classList.add("swing");
+      } else {
+        card.classList.remove("swing");
+      }
+    });
+  };
+});
+</script>
 
 <style lang="scss" scoped>
 .card-y {
@@ -162,6 +188,28 @@
   .uni-img {
     width: 90%;
     height: 400px;
+  }
+}
+
+.swing {
+  animation: swing 1s 0.5s;
+}
+
+@keyframes swing {
+  10% {
+    transform: rotate(10deg);
+  }
+
+  40% {
+    transform: rotate(-10deg);
+  }
+
+  60% {
+    transform: rotate(5deg);
+  }
+
+  80% {
+    transform: rotate(-5deg);
   }
 }
 </style>
