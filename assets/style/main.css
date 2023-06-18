@@ -25,6 +25,10 @@ body[mood=light] .list-options {
   font-family: "Poppins", "Cairo";
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 .c-pointer {
   cursor: pointer !important;
 }
@@ -34,5 +38,8 @@ body[mood=light] .list-options {
 }
 
 .main-bg-color {
-  background-color: #9848ff;
+  background-color: #9848ff !important;
+}
+.main-bg-color:hover {
+  background-color: #9848ff !important;
 }/*# sourceMappingURL=main.css.map */

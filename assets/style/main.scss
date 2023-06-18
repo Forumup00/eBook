@@ -7,6 +7,9 @@
 * {
   font-family: "Poppins", "Cairo";
 }
+body {
+  scroll-behavior: smooth;
+}
 
 .c-pointer {
   cursor: pointer !important;
@@ -17,5 +20,8 @@
 }
 
 .main-bg-color {
-  background-color: #9848ff;
+  background-color: #9848ff !important;
+  &:hover {
+    background-color: #9848ff !important;
+  }
 }

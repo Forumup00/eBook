@@ -23,8 +23,9 @@
           <ul class="list-unstyled d-flex align-items-center mb-0 gap-5">
             <li>
               <NuxtLink
-                :to="localPath('/')"
-                class="text-decoration-none text-muted"
+                to="/#home"
+                class="text-decoration-none"
+                :class="store.homeLink ? 'link-decoration' : 'text-muted'"
               >
                 {{ $t("Home") }}
               </NuxtLink>
@@ -32,8 +33,9 @@
 
             <li>
               <NuxtLink
-                :to="localPath('/')"
-                class="text-decoration-none text-muted"
+                to="/#service"
+                class="text-decoration-none"
+                :class="store.serviceLink ? 'link-decoration' : 'text-muted'"
               >
                 {{ $t("Service") }}
               </NuxtLink>
@@ -41,8 +43,9 @@
 
             <li>
               <NuxtLink
-                :to="localPath('/')"
-                class="text-decoration-none text-muted"
+                to="/#features"
+                class="text-decoration-none"
+                :class="store.featuresLink ? 'link-decoration' : 'text-muted'"
               >
                 {{ $t("Features") }}
               </NuxtLink>
@@ -50,8 +53,9 @@
 
             <li>
               <NuxtLink
-                :to="localPath('/')"
-                class="text-decoration-none text-muted"
+                to="/#form"
+                class="text-decoration-none"
+                :class="store.formLink ? 'link-decoration' : 'text-muted'"
               >
                 {{ $t("Contact us") }}
               </NuxtLink>
@@ -234,13 +238,13 @@ const dropMenu = ref(false);
 
 const drop = ref(false);
 onMounted(() => {
-  window.onscroll = () => {
+  window.addEventListener("scroll", () => {
     if (pageYOffset > 0) {
       drop.value = true;
     } else {
       drop.value = false;
     }
-  };
+  });
 
   if (localStorage.getItem("mood") === "dark") {
     isDark.value = true;
@@ -338,5 +342,14 @@ onMounted(() => {
   .list-options {
     top: 56px;
   }
+}
+
+.link-decoration {
+  color: #9848ff;
+  border-bottom: 1px solid #9848ff;
+}
+a:hover {
+  color: #9848ff !important;
+  border-bottom: 1px solid #9848ff;
 }
 </style>

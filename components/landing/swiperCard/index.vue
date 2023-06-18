@@ -1,5 +1,8 @@
 <template>
-  <div class="parent d-flex justify-content-center align-items-center mb-5">
+  <div
+    class="parent d-flex justify-content-center align-items-center mb-5"
+    id="swiper"
+  >
     <div class="container">
       <div class="row">
         <div class="col-lg-12">

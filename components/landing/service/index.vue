@@ -1,5 +1,5 @@
 <template>
-  <div class="col-lg-12 mb-5">
+  <div class="col-lg-12 mb-5" id="service">
     <h2 class="w-100 text-center">
       {{ $t("How is our service?") }}
     </h2>
@@ -91,7 +91,7 @@
     </div>
   </div>
 
-  <div class="col-lg-6 mb-5">
+  <div class="col-lg-6 mb-5" id="features">
     <div class="w-100 text-center">
       <img src="@/assets/imgs/uniStudent.png" alt="student" class="uni-img" />
     </div>

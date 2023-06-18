@@ -1,4 +1,6 @@
 <template>
+  <go-up />
+
   <NavigationsMainNav />
   <slot />
 
