@@ -65,7 +65,7 @@
                 />
               </NuxtLink>
 
-              <NuxtLink to="https://wa.me/+201226074394">
+              <NuxtLink to="https://wa.me/+201226074394" target="_blank">
                 <img
                   src="../../assets/imgs/whatsapp.png"
                   class="me-2"
