@@ -31,7 +31,7 @@
         v-if="isEmailError"
         class="mb-0 text-danger position-absolute end-0 email-error"
       >
-        Email is invalid
+        {{ $t("Email is invalid") }}
       </p>
     </div>
 
@@ -140,7 +140,7 @@ input[type="password"] {
 }
 
 .email-error {
-  bottom: -25px;
+  bottom: -28px;
 }
 .password-strength {
   border-bottom: 4px solid #9848ff;

@@ -39,5 +39,6 @@
   "General": "عام",
   "FAQ": "تعليمات",
   "Password": "كلمة السر",
-  "Forget password?": "هل نسيت كلمة السر؟"
+  "Forget password?": "هل نسيت كلمة السر؟",
+  "Email is invalid": "خطأ فى البريد الألكتروني"
 }
