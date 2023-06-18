@@ -38,4 +38,9 @@ onMounted(() => {
     object-fit: cover;
   }
 }
+.btn {
+  &:active {
+    transform: scale(0.95) !important;
+  }
+}
 </style>

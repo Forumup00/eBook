@@ -51,6 +51,74 @@
                 </p>
               </div>
             </div>
+
+            <div class="socials">
+              <NuxtLink
+                to="https://www.facebook.com/MohamedElsayedDodo"
+                target="_blank"
+              >
+                <img
+                  src="../../assets/imgs/facebook.png"
+                  class="me-1"
+                  alt="facebook"
+                  title="facebook"
+                />
+              </NuxtLink>
+
+              <NuxtLink to="https://wa.me/+201226074394">
+                <img
+                  src="../../assets/imgs/whatsapp.png"
+                  class="me-2"
+                  alt="whatsapp"
+                  title="whatsapp"
+                />
+              </NuxtLink>
+
+              <NuxtLink
+                to="https://www.instagram.com/ce_dodo_/"
+                target="_blank"
+              >
+                <img
+                  src="../../assets/imgs/instagram.png"
+                  class="me-2"
+                  alt="instagram"
+                  title="instagram"
+                />
+              </NuxtLink>
+
+              <NuxtLink
+                to="https://www.youtube.com/channel/UCCMyb1KMr7FqsObTqft3kFQ"
+                target="_blank"
+              >
+                <img
+                  src="../../assets/imgs/youtube.png"
+                  class="me-2"
+                  alt="youtube"
+                  title="youtube"
+                />
+              </NuxtLink>
+
+              <NuxtLink to="https://telegram.me/forumup_Dodo" target="_blank">
+                <img
+                  src="../../assets/imgs/telegram.png"
+                  class="me-2"
+                  alt="telegram"
+                  title="telegram"
+                />
+              </NuxtLink>
+
+              <NuxtLink
+                to="https://www.linkedin.com/in/mohamed-el-sayed-b7419a1b2/"
+                target="_blank"
+              >
+                <img
+                  src="../../assets/imgs/linkedin.png"
+                  class="me-2"
+                  alt="linkedin"
+                  title="linkedin"
+                />
+              </NuxtLink>
+            </div>
           </div>
         </div>
 
@@ -84,6 +152,17 @@
     width: 30px;
     height: 30px;
     object-fit: cover;
+  }
+}
+.socials {
+  a {
+    text-decoration: none;
+    img {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
   }
 }
 </style>
