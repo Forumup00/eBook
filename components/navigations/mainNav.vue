@@ -139,7 +139,7 @@
               <div class="container">
                 <div class="w-100 mb-3">
                   <NuxtLink
-                    :to="localPath('/')"
+                    to="/#home"
                     class="text-decoration-none text-muted d-block py-3 border-bottom"
                     @click="dropMenu = false"
                   >
@@ -147,21 +147,23 @@
                   </NuxtLink>
 
                   <NuxtLink
-                    :to="localPath('/')"
+                    to="/#service"
                     class="text-decoration-none text-muted d-block py-3 border-bottom"
                     @click="dropMenu = false"
                   >
                     {{ $t("Service") }}
                   </NuxtLink>
+
                   <NuxtLink
-                    :to="localPath('/')"
+                    to="/#features"
                     class="text-decoration-none text-muted d-block py-3 border-bottom"
                     @click="dropMenu = false"
                   >
                     {{ $t("Features") }}
                   </NuxtLink>
+
                   <NuxtLink
-                    :to="localPath('/')"
+                    to="/#form"
                     class="text-decoration-none text-muted d-block py-3 border-bottom"
                     @click="dropMenu = false"
                   >
